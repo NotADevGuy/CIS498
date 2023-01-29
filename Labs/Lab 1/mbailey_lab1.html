@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<style>
+    body, html {
+        height: 100%;
+        width: 100%;
+        border: solid transparent 5px;
+    }
+
+    #title {
+        border: 3px yellow double;
+    }
+
+    #row1 {
+        border: 4px blue dotted;
+    }
+
+    #row2 {
+        border: 2px red dashed;
+    }
+
+    #row3 {
+        border: 5px green solid;
+    }
+
+    #row4 {
+        border: 2px salmon groove;
+    }
+
+    #row5 {
+        border: 9px peru double;
+    }
+</style>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>LAB 1</title>
+
+        <!-- This is the line for the favicon. -->
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        <!-- These 3 lines are to add Bootstrap 5 -->
+        <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+
+
+    <body>
+<!--        <div id="title">-->
+<!--            <h1 style="text-align:center">-->
+<!--                A Guide on HTML, CSS, and (maybe) Bootstrap!-->
+<!--            </h1>-->
+<!--        </div>-->
+        <div class="container-fluid">
+            <div id="title" class="row h-10">
+                <h1 style="text-align:center">
+                    A Guide on HTML, CSS, and (maybe) Bootstrap!
+                </h1>
+            </div>
+
+            <div id="row1" class="row h-auto">
+                <div id="list_unordered" class="col-6 w-50">
+                    <h2>Unordered List:</h2>
+                    <ul>
+                        <li>
+                            Use the ul tag to start an unordered list.
+                        </li>
+                        <li>
+                            To add an item, use the li tag.
+                        </li>
+                        <li>
+                            Unordered lists can be used to list items that have no direct ordering.
+                        </li>
+                        <li>
+                            <ul>
+                                <li>You can</li>
+                                <li>even have</li>
+                                <li>nested lists!</li>
+                            </ul>
+                        </li>
+                        <li>
+                            But this list section lives in a DIV, so it can be edited differently
+                            (Hence the alignment and color change)
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="list_ordered" class="col-6 w-50">
+                    <h2>Ordered List:</h2>
+                    <ol>
+                        <li>
+                            Use the ol tag to start an ordered list.
+                        </li>
+                        <li>
+                            To add an item, use the li tag like in the unordered list.
+                        </li>
+                        <li>
+                            <ol>
+                                <li>
+                                    Yet again
+                                </li>
+                                <li>
+                                    You can nest lists.
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            Hello!
+                                        </li>
+                                        <li>
+                                            Nested-nested item!
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            But this is in a div as well, so I added a nice border to it!
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div id="row2" class="row h-auto">
+                <h2 style="text-align:center">
+                    Images
+                </h2>
+                <div id="local_image" class="col-6 w-50">
+                    <h3>Image of Lander University</h3>
+                    <img class="img-fluid w-25" src="lander.jpeg" alt="Picture of Lander Campus">
+                    <p>This image was saved locally, and added by using the img tag, and the src attribute!</p>
+                </div>
+
+                <div id="internet_image" class="col-6 w-50">
+                    <h3>Image of a dog</h3>
+                    <img class="img-fluid w-25" src="https://cdn.arstechnica.net/wp-content/uploads/2022/04/GettyImages-997016774-800x532.jpg">
+                    <p>This image was taken from an online source, added by using the img tag, and the src attribute pointing to the online source!</p>
+                </div>
+            </div>
+
+            <div id="row3" class="row h-auto">
+                <h2 style="text-align:center">
+                    Tables
+                </h2>
+
+                <div id="tables" class="col-6 w-100">
+                    <p style="text-align: center">
+                        Tables are created with the table tag, and rows are made with the tr tag.
+                    </p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Username</th>
+                                <th scope="col">Real Name</th>
+                                <th scope="col">Fruit of choice</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>@matthew</td>
+                                <td>Matthew Bailey</td>
+                                <td>Strawberries</td>
+                            </tr>
+                            <tr>
+                                <td>@jerald</td>
+                                <td>Jerald Hollingsworth</td>
+                                <td>Bananas</td>
+                            </tr>
+                            <tr>
+                                <td>@rolland</td>
+                                <td>Rolland Muzeya</td>
+                                <td>Blueberries</td>
+                            </tr>
+                            <tr>
+                                <td>@joseph</td>
+                                <td>Joseph Clark</td>
+                                <td>Blackberries</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="row4" class="row h-auto">
+                <h2 style="text-align:center">
+                    Forms
+                </h2>
+
+                <form action="lander.jpeg" method="get">
+                    <div id="login">
+                        <h5>
+                            Please login
+                        </h5>
+                        Please enter your username: <input type="text" id="uname" name="uname">
+                        <br>
+                        Please enter your password: <input type="password" id="pwd" name="pwd">
+                    </div>
+
+                    <div id="class">
+                        <h5>
+                            Please select your grade
+                        </h5>
+                        <input type="radio" value="1" name="rank">
+                            Freshman
+                        <input type="radio" value="2" name="rank">
+                            Sophomore
+                        <input type="radio" value="3" name="rank">
+                            Junior
+                        <input type="radio" value="4" name="rank">
+                            Senior
+                    </div>
+
+                    <div id="hobbies">
+                        <h5>
+                            Please check off your hobbies
+                        </h5>
+                        <input type="checkbox" name="hobby" value="1">
+                            Reading
+                        <input type="checkbox" name="hobby" value="2">
+                            Swimming
+                        <input type="checkbox" name="hobby" value="3">
+                            Sports
+                        <input type="checkbox" name="hobby" value="4">
+                            Hiking
+                    </div>
+
+                    <div id="seasons">
+                        <h5>Please select your favorite season</h5>
+                        <select name="Favorite Season" id="season">
+                            <option value="0" selected="true">
+                                . . .
+                            </option>
+                            <option value="1">Spring</option>
+                            <option value="2">Summer</option>
+                            <option value="3">Autumn</option>
+                            <option value="4">Winter</option>
+                        </select>
+                    </div>
+
+                    <div id="buttons">
+                        <input type="button" value="Clear Entries"/>
+                        <input type="submit" value="Submit"/>
+                    </div>
+                </form>
+            </div>
+
+            <div id="row5" class="row h-auto">
+                <h2 style="text-align:center">
+                    Image Map
+                </h2>
+                <p style="text-align: center">
+                    Image maps are tricky as since you can move the browser around and resize images, the coordinates get messed up some.
+                </p>
+                <img class="img-fluid w-100" usemap="#workmap" src="desk.jpg">
+                <map name="workmap">
+                    <area target="" alt="Computer" title="Computer" href="" coords="668,339,356,21" shape="rect">
+                    <area target="" alt="Plant" title="Plant" href="" coords="215,59,82" shape="circle">
+                    <area target="" alt="Phone" title="Phone" href="" coords="750,375,819,509" shape="rect">
+                    <area target="" alt="Tablet" title="Tablet" href="" coords="699,92,873,336" shape="rect">
+                </map>
+
+            </div>
+        </div>
+    </body>
+</html>

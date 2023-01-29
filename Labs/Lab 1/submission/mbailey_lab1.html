@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<style>
+    html, body {
+        height:100%;
+        width:100%;
+    }
+</style>
+
+<html lang="en">
+    <head>
+        <!-- These next two lines handle metadata, and creating title. -->
+        <meta charset="UTF-8">
+        <title>498 Lab 1</title>
+
+        <!-- These next two lines create the favicon image for 16x and 32x. -->
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+
+        <!-- The single line Bootstrap import can be done, but I'll stick with the online import. -->
+<!--        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">-->
+        <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+<body style="background: #fccc93;margin: 20px;">
+    <div class="container bg-white">
+        <div style="border: 3px solid black;">
+            <h1 style="text-align: center;">
+                A Guide on HTML, CSS, and (maybe) Bootstrap!
+            </h1>
+        </div>
+
+        <div style="border: 3px solid purple;">
+            <h2 class="text-center">
+                Lists
+            </h2>
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-center">
+                        Unordered Lists
+                    </h3>
+                    <ul>
+                        <li>
+                            Use the ul tag to start an unordered list.
+                        </li>
+                        <li>
+                            To add an item, use the li tag.
+                        </li>
+                        <li>
+                            Unordered lists can be used to list items that have no direct ordering.
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    You can...
+                                </li>
+                                <li>
+                                    even have...
+                                </li>
+                                <li>
+                                    nested lists!!!
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="text-center">Ordered Lists</h3>
+                    <ol>
+                        <li>
+                            Use the ol tag to start an ordered list.
+                        </li>
+                        <li>
+                            To add an item, use the li tag like in the unordered list.
+                        </li>
+                        <li>
+                            <ol>
+                                <li>
+                                    Yet again...
+                                </li>
+                                <li>
+                                    you can nest lists!!!
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            Nested...
+                                        </li>
+                                        <li>
+                                            Nested...
+                                        </li>
+                                        <li>
+                                            Lists!!!
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div style="border: 3px solid pink">
+            <h2 class="text-center">
+                Images
+            </h2>
+            <div class="row">
+                <div class="col-6" style="text-align: center">
+                    <h3 class="text-center">
+                        Local Image
+                    </h3>
+
+                    <img src="img/lander.jpeg" style="max-height: 50%;max-width: 100%;width: 275px;">
+
+                    <p>This image was saved locally, and added by using the img tag, and the src attribute!</p>
+                </div>
+                <div class="col" style="text-align: center;">
+                    <h3 class="text-center">
+                        Internet Image
+                    </h3>
+
+                    <img style="max-width: 100%;max-height: 50%;width: 275px;" src="https://cdn.arstechnica.net/wp-content/uploads/2022/04/GettyImages-997016774-800x532.jpg">
+                    <p>This image was taken from an online source, added by using the img tag, and the src attribute pointing to the online source!</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="border: 3px solid blue;">
+            <h2 class="text-center">
+                Tables
+            </h2>
+            <p>Tables are created with the table tag, and rows are made with the tr tag.</p>
+            <div class="row">
+                <div class="col">
+                    <div class="table-responsive" style="background: lightgrey;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Index
+                                    </th>
+                                    <th>
+                                        Username
+                                    </th>
+                                    <th>
+                                        Real Name
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        @matthew
+                                    </td>
+                                    <td>
+                                        Matthew Bailey
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        @jerald
+                                    </td>
+                                    <td>
+                                        Jerald Hollingsworth
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        3
+                                    </td>
+                                    <td>
+                                        @rolland
+                                    </td>
+                                    <td>
+                                        Rolland Muzeya
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        4
+                                    </td>
+                                    <td>
+                                        @joseph
+                                    </td>
+                                    <td>
+                                        Joseph Clark
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="border: 3px solid green;">
+            <h2 class="text-center">
+                Forms
+            </h2>
+            <div class="row">
+                <div class="col">
+                    <form style="background: gray;" action="img/lander.jpeg" method="get">
+                        <div class="row">
+                            <div class="col">
+                                <p>
+                                    Please enter your username:
+                                </p>
+                            </div>
+                            <div class="col-8">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>Please enter your password:</p>
+                            </div>
+                            <div class="col-8">
+                                <input class="form-control" type="password">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>Select your account type:</p>
+                            </div>
+                            <div class="col">
+                                <input type="radio" value="admin" name="account_type">
+                                    Admin
+                            </div>
+                            <div class="col">
+                                <input type="radio" value="regular" name="account_type">
+                                    Regular
+                            </div>
+                            <div class="col">
+                                <input type="radio" value="spectator" name="account_type">
+                                    Spectator
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>Check off any interests of yours:</p>
+                            </div>
+                            <div class="col">
+                                <input type="checkbox" name="interest" value="reading">
+                                    Reading
+                                <input type="checkbox" name="interest" value="technology">
+                                    Technology
+                            </div>
+                            <div class="col">
+                                <input type="checkbox" name="interest" value="gaming">
+                                    Gaming
+                                <input type="checkbox" name="interest" value="hiking">
+                                    Hiking
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>Please select your gender:</p>
+                            </div>
+                            <div class="col offset-lg-0">
+                                <select name="Gender" class="form-select" id="gender">
+                                    <option value="0" selected="TRUE">
+                                        ...
+                                    </option>
+
+                                    <option value="male">
+                                        Male
+                                    </option>
+                                    <option value="female">
+                                        Female
+                                    </option>
+                                    <option value="nb">
+                                        Non-binary
+                                    </option>
+                                    <option value="other">
+                                        Other
+                                    </option>
+                                    <option value="na">
+                                        Don't want to share
+                                    </option>
+
+                                </select></div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><input class="btn btn-primary" type="button" value="Clear Inputs" style="background: var(--bs-danger);"><input class="btn btn-primary" type="submit" style="background: var(--bs-green);"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div style="border: 3px solid var(--bs-info);">
+            <h2 class="text-center">
+                Item Maps
+            </h2>
+            <p>
+                Warning: I don't have a lot of experience with Item Maps, but they are prone to act different depending on size, as I don't know the way to do it perfectly.
+            </p>
+            <div class="row">
+                <div class="col">
+                    <img src="img/desk.jpg" usemap="#workmap">
+                    <map name="workmap">
+                        <area target="" alt="Computer" title="Computer" href="" coords="668,339,356,21" shape="rect">
+                        <area target="" alt="Plant" title="Plant" href="" coords="215,59,82" shape="circle">
+                        <area target="" alt="Phone" title="Phone" href="" coords="750,375,819,509" shape="rect">
+                        <area target="" alt="Tablet" title="Tablet" href="" coords="699,92,873,336" shape="rect">
+                    </map>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

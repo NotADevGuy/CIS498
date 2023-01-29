@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    text-align:center;
+    background-color: black;
+    color:lawngreen;
+    padding:1%;
+    overflow:auto;
+    /*border: solid lawngreen 1px;*/
+    border: solid lawngreen 2px;
+
+}
+
+#uList {
+    text-align:left;
+    color:blue;
+}
+
+#oList {
+    text-align:left;
+    color:yellow;
+    border: 2px white dashed;
+}
