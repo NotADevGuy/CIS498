@@ -1,0 +1,39 @@
+<!--From the 1/30 Class-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script>
+            // var x=8;
+            // alert(x+" is the number");
+            // console.log("hello from the script tag");
+            function add() {
+                var n1 = parseInt(document.getElementById("num1").value);
+                var n2 = parseInt(document.getElementById("num2").value);
+                var sum = n1 + n2;
+                document.getElementById("ans").value=sum;
+                document.getElementById("div1").innerHTML=("<h1>The answer is " + sum + "</h1>");
+            }
+        </script>
+    </head>
+
+
+
+    <body>
+        <h1>
+            Hello
+        </h1>
+        <form action="">
+            Number1 <input type="text" id="num1"> <br>
+            Number2 <input type="text" id="num2"> <br>
+            Answer <input type="text" id="ans"> <br>
+            <button type="button" onclick="add()"> Find Sum </button>
+        </form>
+        <div id="div1">
+
+        </div>
+    </body>
+</html>
