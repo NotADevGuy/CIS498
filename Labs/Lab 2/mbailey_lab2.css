@@ -1,0 +1,24 @@
+h1, h3 {
+  color: blue;
+}
+
+.border_class {
+  border: dotted black 5px;
+}
+
+#id_color {
+  color: yellow;
+}
+
+div p {
+  color: beige;
+}
+
+th, td {
+  border: solid 4px yellow;
+}
+
+h3 + h4 {
+  color: red;
+}
+
