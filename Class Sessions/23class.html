@@ -1,0 +1,88 @@
+<!--From the 2/1 Class-->
+
+<!DOCTYPE html>
+
+<style>
+    html, body {
+        height:100%;
+        width:100%;
+    }
+</style>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <!-- This imports javascript -->
+        <script type="text/javascript" src="cars.js"></script>
+
+        <!-- These 3 lines are to add Bootstrap 5 -->
+        <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            function add(x, y) {
+                // var z = x + y;
+                // return z;
+                return x + y;
+            }
+            var x = 1;
+
+            let add2=(a, b) => {return a + b;}
+            let twice = a => {return 2*a;}
+            function test1() {
+                document.getElementById("div1").innerHTML=("<h1>" + add(8,9) + "</h1>");
+            }
+            function test2() {
+                x++;
+                document.getElementById("div2").innerHTML=("<h1>" + x + "</h1>");
+                x = x % 100;
+            }
+
+
+
+            // const test2=(k, j, l) => {return x + j + l;}
+
+            // function test1() {
+            //     document.getElementById("div1").innerHTML=add(3, 2);
+            // }
+
+
+            // function test2() {
+            //     document.getElementById("div2").innerHTML=add;
+            // }
+
+            setInterval(test2, 1000);
+        </script>
+    </head>
+    <body>
+    <div id="row1" class="row bg-success h-25">
+
+    </div>
+    <div id="row2" class="row h-75">
+        <div id="r2c1" class="col-2 bg-danger">
+
+        </div>
+        <div id="r2c2" class="col-8 bg-primary">
+            <button type="button" onclick="test1()">
+                Call function
+            </button>
+            <button type="button" onclick="test2()">
+                Call function reference
+            </button>
+            <div id="div1">
+
+            </div>
+            <div id="div2">
+
+            </div>
+        </div>
+        <div id="r2c3" class="col-2 bg-dark">
+
+        </div>
+        <script>
+            firstCar();
+        </script>
+    </div>
+    </body>
+</html>

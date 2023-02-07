@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script>
+            var x = 0;
+            function incX() {
+                x++;
+                console.log("x is " + x);
+            }
+
+            setInterval(incX, 3000);
+            // Can put function definition in place of name
+            setInterval(()=>{
+                x++;
+                console.log("VIA 2: x is " + x);
+            }, 1500);
+            console.log("HELLO FROM CODE");
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

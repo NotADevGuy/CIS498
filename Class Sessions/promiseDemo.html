@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script>
+            async function getCars() {
+                for (var i = 0; i < 5000; i++){}
+
+                cars_coll = [
+                    {make:"Honda", model:"Civic", year:"2005"},
+                    {make:"Chevy", model:"Silverado", year:"2015"},
+                    {make:"Dodge", model:"Viper ACR", year:"2017"},
+                    {make:"Chevy", model:"Corvette Z06", year:"2023"},
+                    {make:"Cadillac", model:"CTS-V BlackWing", year:"2022"}
+                ];
+                return cars_coll;
+            }
+
+            async function getCar(index) {
+                var cars = await getCars();
+                var myCar = cars[index];
+                console.log(myCar);
+            }
+
+            getCar(2);
+        </script>
+    </head>
+    <body>
+        <div id="div1">
+        </div>
+    <script>
+        document.getElementById("div1").innerHTML = "<h1>Hello</h1>";
+    </script>
+    </body>
+</html>
