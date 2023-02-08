@@ -1,0 +1,48 @@
+<!--From the 2/8 class-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script>
+            function promiseFunction (resolve, reject){
+                var x = Math.random();
+                console.log(x);
+                if (x >= 0.5) {
+                    resolve(x);
+                }
+                else {
+                    reject(x);
+                }
+            }
+
+            function test() {
+                let mypromise = new Promise(promiseFunction);
+
+                document.getElementById("num").innerHTML="";
+                mypromise.then(function(a){
+                    document.getElementById("num").innerHTML="<h1> Value is big ==> " + a + " </h1>";
+                }).catch(function(b) {
+                    document.getElementById("num").innerHTML = "<h1> Value is small ==> " + b + " </h1>";
+                });
+                    // }).finally(() => {
+                    // alert("HEWWOOO");
+                    // console.log("hello");
+                // });
+            }
+        </script>
+    </head>
+
+
+
+    <body>
+        <h1>Check the value</h1>
+        <div id="num">
+
+        </div>
+        <script>
+            setInterval(test, 200);
+        </script>
+    </body>
+</html>
