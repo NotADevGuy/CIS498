@@ -1,0 +1,38 @@
+.carItem {
+  text-align: center;
+  border: 2px black solid;
+  margin-top: 20px;
+}
+
+#carContainer {
+  text-align: center;
+  border: 2px black solid;
+  margin-top: 20px;
+}
+
+#regForm input, select {
+  border: 1px black solid;
+  margin-top: 5px;
+}
+
+#loginForm input, select {
+  border: 1px black solid;
+  margin-top: 5px;
+}
+
+#regForm label {
+  margin-top: 5px;
+}
+
+#loginForm label {
+  margin-top: 5px;
+}
+
+#regForm {
+  text-align: center;
+}
+
+#loginForm {
+  text-align: center;
+}
+
